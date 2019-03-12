@@ -1,5 +1,7 @@
 jekyll-gulp-sass-browser-sync
 =============================
+#This readme is deprecated, see the gist below for more useful insights for writing the gulpfile.
+[https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a]https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a
 
 A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
 
