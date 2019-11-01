@@ -37,9 +37,9 @@ function sassBuild(){
           onError: browserSync.notify
       }))
       .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-      .pipe(dest('_site/css'))
+      .pipe(dest('_site/assets/css'))
       .pipe(browserSync.reload({stream:true}))
-      .pipe(dest('css'));
+      .pipe(dest('assets/css'));
 }
 
 exports.default = series(parallel(sassBuild, jekyllBuild), browserSyncInit );
