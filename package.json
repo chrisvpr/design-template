@@ -1,32 +1,33 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "name": "design-template",
+  "version": "1.0.0",
+  "description": "Jekyll, GulpJS, SASS and BrowserSync",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
-  },
-  "keywords": [
-    "jekyll",
-    "gulp",
-    "sass",
-    "browsersync"
+  "browserslist": [
+    "last 2 versions"
   ],
-  "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
-  },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "acorn": "^7.1.0",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.7",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "webpack": "^4.26.1",
+    "webpack-stream": "^5.1.1"
+  }
 }
