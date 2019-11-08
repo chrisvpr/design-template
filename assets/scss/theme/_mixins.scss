@@ -1,0 +1,18 @@
+/*
+ * Important:
+ *  UIkit has a nice way of adding custom css to components, called mixin hooks.
+ *  use mixin hooks as much as you can and avoid overwriting existing classes.
+ *
+ *  mixin-hooks will help you avoid any specificity problems and will make the
+ *  codebase much more maintanable.
+ *
+ *  Example: The following hook will insert the rule   color: #000
+ *  inside the definition of the class card.
+ *  @mixin hook-card() { color: #000; }
+ *
+ * NOTE: This files is just for imports.
+ *
+ * MAG.
+ */
+ @import "mixins/accordion.scss";
+ 

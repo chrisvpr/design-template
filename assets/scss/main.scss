@@ -1,3 +1,11 @@
-body {
-    background: white;
-}
+/* ---- don't touch ---- */
+@import "theme/variables";  // variables overwrites for uikit
+@import "uikit3/variables-theme.scss";
+@import "uikit3/mixins-theme.scss";
+@import "theme/mixins";     // hook mixins overwrites for uikit
+@import "uikit3/uikit-theme.scss";
+/* ---- don't touch ---- */
+
+@import "global.scss";
+@import "header.scss";
+@import "footer.scss";

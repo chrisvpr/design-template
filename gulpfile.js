@@ -72,7 +72,7 @@ function images() {
 // CSS task
 function css() {
   return gulp
-    .src("./assets/scss/**/*.scss")
+    .src("./assets/scss/*.scss")
     .pipe(plumber())
     .pipe(sass({ outputStyle: "expanded" }))
     .pipe(rename({ suffix: ".min" }))

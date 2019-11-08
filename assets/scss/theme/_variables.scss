@@ -1,0 +1,13 @@
+/*
+ * Important:
+ *  variable overwrites for UIkit only. Use upper level _variables.scss file
+ *  for general purpose variables.
+ *
+ * Example UIkit variable overwrite
+ * $global-link-color: #DA7D02;
+ *
+ * NOTE: This files is just for imports.
+ *
+ * MAG.
+ */
+ @import "mixins/accordion.scss";
