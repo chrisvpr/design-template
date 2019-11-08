@@ -24,8 +24,9 @@ fi
 echo "Executing bundler"
 bundle install
 
+# check if we need to execute npm install, if so, do it.
 echo "NPM Install"
 npm install
 
+# Start default environment
 gulp
-

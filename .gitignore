@@ -3,3 +3,4 @@ _site
 node_modules
 .jekyll-cache
 package-lock.json
+assets/images-high-quality

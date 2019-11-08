@@ -1,4 +1,22 @@
-name: Jekyll/Gulp v4
+title: Design Template
+baseurl: ""
+
 markdown: kramdown
-highlighter: rouge # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+exclude:
+  - node_modules
+  - assets
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - README.md
+  - webpack.config.js
+  - setup
+
+include:
+  - _pages
+
+keep_files:
+  - assets
