@@ -17,8 +17,13 @@ fi
 
 if ! type npm &>/dev/null
 then
-	echo "NPM not installed."
-	exit 1;
+	if type brew &>/dev/null
+	then
+		brew install npm
+	else
+		echo "NPM not installed."
+		exit 1;
+	fi
 fi
 
 echo "Executing bundler"
