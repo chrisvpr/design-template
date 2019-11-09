@@ -7,15 +7,15 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="assets/css/main.min.css">
 
+        <script defer src="assets/js/main.bundle.js"></script>
     </head>
     <body>
-          <header class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          </header>
+          {% include header.html %}
 
           {{ content }}
 
+          {% include footer.html %}
     </body>
 </html>

@@ -10,6 +10,7 @@ module.exports = {
       {
         test: /\.js?$/,
         include: [path.resolve(__dirname, "./assets/js")],
+        exclude: /uikit$/,
         loader: "babel-loader"
       }
     ]
