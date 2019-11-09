@@ -4,6 +4,9 @@ const browsersync = require("browser-sync").create();
 
 const gulp   = require("gulp");
 
+const babel  = require('gulp-babel');
+const minify = require("gulp-minify");
+
 const cp     = require("child_process");
 const del    = require("del");
 const eslint = require("gulp-eslint");
@@ -13,17 +16,12 @@ const imagemin = require("gulp-imagemin");
 const mozjpeg = require('imagemin-mozjpeg');
 const pngquant = require('imagemin-pngquant');
 
-
 const sass         = require("gulp-sass");
 const rename       = require("gulp-rename");
 const plumber      = require("gulp-plumber");
 const postcss      = require("gulp-postcss");
 const cssnano      = require("cssnano");
 const autoprefixer = require("autoprefixer");
-
-const webpack       = require("webpack");
-const webpackstream = require("webpack-stream");
-const webpackconfig = require("./webpack.config.js");
 
 function browserSync(done) {
   browsersync.init({
@@ -96,10 +94,10 @@ function scripts() {
   return (
     gulp
       .src(["./assets/js/**/*"])
-      .pipe(plumber())
-      .pipe(webpackstream(webpackconfig, webpack))
-      .pipe(gulp.dest("./_site/assets/js/"))  // folders only
-      .pipe(browsersync.stream())
+      .pipe(newer("./_site/assets/js"))
+      .pipe(babel({presets: ['@babel/preset-env']}))
+      .pipe(minify({noSource: true, ext: {min: '.min.js'}}))
+      .pipe(gulp.dest("./_site/assets/js/"))
   );
 }
 
