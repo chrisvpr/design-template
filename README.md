@@ -14,8 +14,11 @@ $ gulp
 to start working on your new environment.
 
 **Another way**
-Double click a file called `start` inside the repo. This file is a script that
+
+Double click a file called `start` inside the repo.
+
+This file is a script that
 will do its best to setup your project without the need of you typing any command.
 After installing all dependencies, it will start `gulp` automatically.
 
-Yes, `start` can be used as a way to start gulp without typing any command.
+Yes, double clicking `start` can be used as a way to start gulp without typing any command.
