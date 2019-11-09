@@ -1,4 +1,4 @@
-Starter project Jekyll, GulpJS, SASS & BrowserSync.
+Starter project Jekyll, GulpJS, SASS, UIKit 3 & BrowserSync.
 
 What you get:
  1. Automatic image optimization, you no longer need tinypng.com to optimize images.
