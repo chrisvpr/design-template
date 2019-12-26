@@ -1,11 +1,17 @@
-/* ---- don't touch ---- */
+// !Important: Do not Change Files Orders 
+
+//UI-KIT Files (Do not touch)
 @import "theme/variables";  // variables overwrites for uikit
 @import "uikit3/variables.scss";
 @import "uikit3/mixins.scss";
 @import "theme/mixins";     // hook mixins overwrites for uikit
 @import "uikit3/uikit.scss";
-/* ---- don't touch ---- */
 
+//Exteral Components (Vendors)
+
+//Globals, Variables and Mixins (Author Agent)
 @import "global.scss";
-@import "header.scss";
-@import "footer.scss";
+
+//Custom Components (Author Agent)
+@import "components/header";
+@import "components/footer.scss";
